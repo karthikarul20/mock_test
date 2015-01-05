@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div data-role="page" id="test">
+            <div data-role="content" >
+                <div id="outerDiv" style="background-color: white;">
+                    <div id="question">
+                        <table style="border-bottom: 1px solid green;">
+                            <tr>
+                                <td>
+                                    <div id="questionNo"></div>
+                                </td>
+                                <td>
+                                    <div id="questionDesc"></div>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <div id="answers">
+                        <table>
+                            <tr>
+                                <td class="prevBtn" rowspan="4">
+                                    <img onclick="changeQuestion('prev')" src="../img/prev.png"/>
+                                </td>
+                                <td id="optionNumber1" class="optionNumber" onclick='selectAnswer(1)'>A</td>
+                                <td id="optionValue1" class="optionValue" onclick='selectAnswer(1)'></td>
+                                <td class="nextBtn" rowspan="4">
+                                    <img onclick="changeQuestion('next')" src="../img/next.png"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="optionNumber2" class="optionNumber"  onclick='selectAnswer(2)'>B</td>
+                                <td id="optionValue2" class="optionValue"  onclick='selectAnswer(2)'></td>
+                            </tr>
+                            <tr>
+                                <td id="optionNumber3" class="optionNumber"  onclick='selectAnswer(3)'>C</td>
+                                <td id="optionValue3" class="optionValue"  onclick='selectAnswer(3)'></td>
+                            </tr>
+                            <tr>
+                                <td id="optionNumber4" class="optionNumber"  onclick='selectAnswer(4)'>D</td>
+                                <td id="optionValue4" class="optionValue"  onclick='selectAnswer(4)'></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="bottomMenu">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;background-color: rgb(252, 7, 7);" onclick='$.mobile.changePage("testList.html");'>Quit</td>
+                                <td style="width: 50%" onclick='$.mobile.changePage("result.html");'>Submit</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

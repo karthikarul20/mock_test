@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div data-role="page" id="subjects">
+            <div data-role="content" >
+                <div id="subjectsOuterDiv" style="background-color: white;">
+                    <div style="height:20%;text-align: center;">
+                        <div style="padding-top: 5%;font-size: 33pt;font-weight: bold;color: rgb(116, 197, 62);">Mock Test</div>
+                        <div>
+                            <table id="subjectHeadingTable">
+                                <tr>
+                                    <td onclick='toggleMode("study")' id="study">Study Mode</td>
+                                    <td onclick='toggleMode("training")' id="training">Training Mode</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    <div id="subjectsList" style="height:80%;">
+                        <table>
+                            <tr>
+                                <td onclick='loadTests("maths")'><img src="../img/maths.png"/><div>Maths</div></td>
+                                <td onclick='loadTests("physics")'><img src="../img/physics.png"/><div>Physics</div></td>
+                                <td onclick='loadTests("chemistry")'><img src="../img/chemistry.png"/><div>Chemistry</div></td>
+                            </tr>
+                            <tr>
+                                <td onclick='loadTests("botany")'><img src="../img/botany.png"/><div>Botany</div></td>
+                                <td onclick='loadTests("zoology")'><img src="../img/zoology.png"/><div>Zoology</div></td>
+                                <td onclick='loadTests("computer")'><img src="../img/computer.png"/><div>Computer</div></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
